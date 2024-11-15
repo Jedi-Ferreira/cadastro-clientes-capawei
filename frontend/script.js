@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const response = await fetch("/api/clientes", {
+            const response = await fetch("http://localhost:3000/api/clientes", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(dadosCliente),
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const response = await fetch("/api/produtos", {
+            const response = await fetch("http://localhost:3000/api/produtos", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(dadosProduto),
